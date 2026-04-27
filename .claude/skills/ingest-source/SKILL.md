@@ -24,6 +24,15 @@ Read [standards.md](references/standards.md) first. It defines the source classe
 5. Update `index.md` so the object is directly locatable.
 6. Append `log.md` with the ingest result.
 
+## Guardrails
+
+1. If the user instruction, scope, file count, or boundary conflicts with earlier instructions or the skill standard, stop and ask for confirmation before proceeding.
+2. Decide the source class before producing any artifacts.
+3. For `codebase`, produce raw snapshots first; do not write `wiki/` in the same first pass.
+4. Raw snapshots must record facts only; do not write wiki-level judgments into `raw/`.
+5. For `codebase`, create dedicated structure, heatmap, and dependency snapshots when those facts are available.
+6. Keep stage boundaries explicit in `log.md`: `raw` ingest and `wiki` ingest are separate events.
+
 ## Rules
 
 - Treat `raw/` as read-only.

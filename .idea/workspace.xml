@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm-harness-project/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/log.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -293,7 +291,39 @@
       <option name="project" value="LOCAL" />
       <updated>1777275570927</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="init">
+      <option name="closed" value="true" />
+      <created>1777276095439</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1777276095439</updated>
+    </task>
+    <task id="LOCAL-00028" summary="init">
+      <option name="closed" value="true" />
+      <created>1777276101687</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1777276101687</updated>
+    </task>
+    <task id="LOCAL-00029" summary="init">
+      <option name="closed" value="true" />
+      <created>1777277696324</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1777277696324</updated>
+    </task>
+    <task id="LOCAL-00030" summary="init">
+      <option name="closed" value="true" />
+      <created>1777277703805</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1777277703805</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

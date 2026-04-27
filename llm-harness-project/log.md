@@ -26,3 +26,7 @@
 - 补齐 `llm-harness-project/harness/` 执行层规则
 - 更新 `CLAUDE.md`、`AGENTS.md`、实例 `CLAUDE.md` 与 `index.md`，统一系统层、实例层、知识层和执行层边界
 - 补齐当前实例 `raw/` 与 `wiki/` 的工作型目录骨架
+
+## [2026-04-27] Ingest | raw 摄入: dx-game-hall 第一刀，产物 9 份，wiki 待后续轮次
+- 仅写入 `llm-harness-project/raw/repos/dx-game-hall/`
+- 产物覆盖 README、POM、包树、入口、配置、文档、git 热度、外部依赖、结构判断
