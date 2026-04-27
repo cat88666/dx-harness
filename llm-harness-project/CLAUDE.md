@@ -1,0 +1,36 @@
+# llm-harness-project 实例配置
+
+本文件仅记录 `llm-harness-project` 实例的特定配置。
+通用规范（铁律 / 命名规则 / 操作流水线）见：
+- 根目录 `CLAUDE.md` → 铁律与技能路由
+- `.claude/skills/naming/SKILL.md` → 命名规则（唯一权威）
+- `.claude/skills/<skill>/SKILL.md` → 各操作流水线
+
+## 实例路径
+
+| 路径 | 用途 |
+|------|------|
+| `llm-harness-project/raw/` | 原始资料（只读） |
+| `llm-harness-project/wiki/` | 结构化知识库 |
+| `llm-harness-project/index.md` | 全局索引 |
+| `llm-harness-project/log.md` | 操作日志（append-only） |
+
+## 目录结构
+
+```text
+llm-harness-project/raw/          ← 原始资料（只读）
+├── archive/              ← 归档资料
+├── course/               ← 课程材料（含 transcript/ 原始 ASR）
+├── engineering/          ← 工程实践资料
+├── papers/               ← 论文
+└── prompt/               ← 提示工程相关资料
+
+llm-harness-project/cleaned/      ← 已修正工作副本（可编辑，非只读）
+└── course/transcript/    ← raw/course/transcript/ 的 ASR 纠错版本
+```
+
+**cleaned/ 使用约定**：`raw/` 中 ASR 转录文本存在系统性识别错误时，在 `cleaned/` 中创建纠错副本。ingest 优先从 `cleaned/` 读取，fallback 到 `raw/`。
+
+## 已知技术债
+
+`wiki/` 下所有文件已于 2026-04-25 完成类型前缀重命名。新增内容必须遵守命名规则，不得引入无前缀文件名。
