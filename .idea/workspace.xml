@@ -5,54 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm-harness-project/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/log.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/体系-AI工程体系.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/体系-LLM体系.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-Chain-of-Thought.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-Few-Shot-Prompting.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-LoRA.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-Prompt工程.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-分布式训练.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-梯度下降与优化.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-正则化.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/方法-混合检索.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/机制-Decoder-only前向传播.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/机制-FlashAttention.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/机制-KV-Cache.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/机制-Self-Attention.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/机制-多头注意力.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/框架-5C框架.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/框架-Context-Engineering.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-Agent.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-Function-Calling.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-RAG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-Tokenizer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-监督学习与无监督学习.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/concepts/概念-集成学习.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/产品-Claude.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/产品-Gemini.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/工具-LangFuse.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/工具-Qdrant.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/工具-Reranker.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/工具-XGBoost.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/工具-vLLM.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/组织-Anthropic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/entities/组织-Google.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-5C框架知识笔记撰写.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-Agent与工具调用.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-LLM核心机制与推理优化.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-LLM生产化与评估.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-Prompt工程实践.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-RAG系统设计.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-Transformer架构原理.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-大模型微调工程实践.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-机器学习基础理论.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/synthesis/判断-LLM工程全栈知识体系.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/synthesis/对比-RAG-vs-微调-vs-Agent.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/synthesis/策略-AI高效使用技巧全景.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/synthesis/策略-LLM应用开发入门路线.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/synthesis/策略-LLM核心知识掌握路径.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777274701389</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="init">
+      <option name="closed" value="true" />
+      <created>1777274897651</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1777274897651</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

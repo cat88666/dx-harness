@@ -2,7 +2,7 @@
 
 这是一个面向日常开发的个人 Harness。
 
-它保留受约束的 Karpathy LLM Wiki / Obsidian 工程记忆模型，但目标不是记学习笔记，而是为真实研发工作提供：
+它保留受约束的 Wiki / Obsidian 工程记忆模型，但目标不是记学习笔记，而是为真实研发工作提供：
 
 - 代码结构索引
 - 工程记忆沉淀
@@ -17,11 +17,7 @@
 2. 让知识沉淀按仓库结构和问题类型发生，而不是按聊天记录堆积
 3. 让调试、改代码、回顾事故、做需求时复用同一套上下文
 
-你的真实工作环境不是单仓，而是 `/Users/mac/IdeaProjects` 下的多仓体系：
-
-- 框架层：`dx-game-frame`、`dz-framework`、`dx-game-core`
-- 业务层：`dx-game-texas`、`dx-game-mahjong`、`dx-game-guandan`
-- 基础设施层：`dx-net-bolt`、`dx-hub-server`、`dx-common-facades`
+真实工作环境通常不是单仓，而是多个互相依赖的代码仓。模板复制后，先登记当前实例真正要服务的仓库，不要保留模板示例。
 
 ## 最小结构
 
@@ -87,31 +83,30 @@ llm-harness-template/
 
 推荐命名：
 
-- `entities/仓库-dx-game-frame.md`
-- `entities/模块-dx-game-frame-service-core.md`
-- `entities/服务-dx-game-texas.md`
-- `entities/任务-UserBetCountdownTask.md`
-- `runbooks/Runbook-Texas下注超时链路排查.md`
-- `incidents/Incident-牌局未结算导致房间卡死.md`
-- `changes/变更-德州发牌链路重构.md`
-- `summaries/主题-Texas任务调度模型.md`
-- `synthesis/对比-Disruptor-vs-线程池任务派发.md`
+- `entities/仓库-<repo>.md`
+- `entities/模块-<module>.md`
+- `entities/服务-<service>.md`
+- `entities/任务-<task>.md`
+- `runbooks/Runbook-<症状>排查.md`
+- `incidents/Incident-<事故标题>.md`
+- `changes/变更-<需求或修复标题>.md`
+- `summaries/主题-<链路或主题>.md`
+- `synthesis/对比-<方案A>-vs-<方案B>.md`
 
 ## 与当前代码库的映射
 
 第一步不是全量导入，而是先建立系统地图：
 
-- `dx-game-frame`：通用框架层，优先沉淀线程模型、任务调度、RPC、Repository、Proto
-- `dx-game-core`：运行时核心能力层，优先沉淀事件、队列、线程、延迟事件
-- `dz-framework`：基础设施封装层，优先沉淀 Redis、MQ、Nacos、日志、优雅停机
-- `dx-game-texas`：业务样板层，优先沉淀任务链路、牌局状态机、配置驱动行为
-- `dx-hub-server` / `dx-common-facades`：外围协作层，沉淀跨服务依赖
+- 仓库页：说明仓库定位、路径、启动方式、依赖关系
+- 模块页：说明模块职责、关键类、上游下游、数据模型
+- 服务页：说明服务入口、协议、RPC、MQ、缓存、配置
+- 任务页：说明触发方式、执行链路、失败表现和排查入口
 
 第一批最值得编译进来的不是所有代码，而是：
 
 1. `pom.xml` 和模块树
 2. 启动类、配置目录、环境 profile
-3. 核心任务链路，如 `TableLoopTask`、`UserBetCountdownTask`
+3. 核心任务链路和高频入口类
 4. 常见故障日志与 traceId 排查路径
 5. 高频改动点和易踩坑配置
 
@@ -119,11 +114,7 @@ llm-harness-template/
 
 不要一上来全量导入 `/Users/mac/IdeaProjects`。
 
-第一阶段只做 3 个仓：
-
-1. `dx-game-frame`
-2. `dx-game-core`
-3. `dx-game-texas`
+第一阶段只做当前最常用的 1-3 个仓。
 
 第一周只产出 10-15 页高价值页面：
 

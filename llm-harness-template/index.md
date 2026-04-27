@@ -23,15 +23,6 @@
 - `wiki/changes/` — 变更沉淀层
 - `wiki/synthesis/` — 对比判断层
 
-## Active Seeds
+## Active Pages
 
-- [[仓库-dx-game-core]](wiki/entities/仓库-dx-game-core.md)
-- [[仓库-dx-game-frame]](wiki/entities/仓库-dx-game-frame.md)
-- [[服务-dx-game-texas]](wiki/entities/服务-dx-game-texas.md)
-- [[模块-dx-game-frame-service-core]](wiki/entities/模块-dx-game-frame-service-core.md)
-- [[任务-TableLoopTask]](wiki/entities/任务-TableLoopTask.md)
-- [[任务-UserBetCountdownTask]](wiki/entities/任务-UserBetCountdownTask.md)
-- [[主题-线程与事件分发骨架]](wiki/summaries/主题-线程与事件分发骨架.md)
-- [[主题-Texas牌局任务生命周期]](wiki/summaries/主题-Texas牌局任务生命周期.md)
-- [[Runbook-Texas下注超时链路排查]](wiki/runbooks/Runbook-Texas下注超时链路排查.md)
-- [[Runbook-Texas结算后不开新手排查]](wiki/runbooks/Runbook-Texas结算后不开新手排查.md)
+当前模板不携带具体项目知识页。复制模板后，应从真实仓库生成页面，并登记到本索引。

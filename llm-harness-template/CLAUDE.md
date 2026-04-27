@@ -2,7 +2,7 @@
 
 ## 目标
 
-这是一个面向日常开发的个人 Harness，同时保留受约束的 Karpathy LLM Wiki / Obsidian 工程记忆模型。
+这是一个面向日常开发的个人 Harness，同时保留受约束的 Wiki / Obsidian 工程记忆模型。
 
 目标不是记录聊天，而是把代码仓、日志、配置、需求、事故和变更，编译成可被人和 Agent 稳定消费的结构化工程记忆。
 
@@ -54,15 +54,15 @@
 
 统一用 `类型-核心名称.md`：
 
-- `仓库-dx-game-frame.md`
-- `模块-dx-game-frame-service-core.md`
-- `服务-dx-game-texas.md`
-- `任务-UserBetCountdownTask.md`
-- `主题-Texas牌局任务生命周期.md`
-- `Runbook-Texas下注超时链路排查.md`
-- `Incident-牌局未结算导致房间卡死.md`
-- `变更-德州结算链路重构.md`
-- `对比-框架层-vs-业务层改动落点.md`
+- `仓库-<repo>.md`
+- `模块-<module>.md`
+- `服务-<service>.md`
+- `任务-<task>.md`
+- `主题-<链路或主题>.md`
+- `Runbook-<症状>排查.md`
+- `Incident-<事故标题>.md`
+- `变更-<需求或修复标题>.md`
+- `对比-<方案A>-vs-<方案B>.md`
 
 ## 核心指令
 
