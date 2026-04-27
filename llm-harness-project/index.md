@@ -20,4 +20,7 @@
 ## System
 
 - [CLAUDE.md](CLAUDE.md) — 当前实例规则
+- [harness/queries/QUERY_RULES.md](harness/queries/QUERY_RULES.md) — 查询、定位、排障输出边界
+- [harness/prompts/PROMPT-INGEST-REPO.md](harness/prompts/PROMPT-INGEST-REPO.md) — 仓库摄入模板
+- [harness/checklists/CHECKLIST-知识回写.md](harness/checklists/CHECKLIST-知识回写.md) — 知识回写检查清单
 - [log.md](log.md) — append-only 变更记录

@@ -1,10 +1,7 @@
 # llm-harness-project 实例配置
 
 本文件仅记录 `llm-harness-project` 实例的特定配置。
-通用规范（铁律 / 命名规则 / 操作流水线）见：
-- 根目录 `CLAUDE.md` → 铁律与技能路由
-- `.claude/skills/naming/SKILL.md` → 命名规则（唯一权威）
-- `.claude/skills/<skill>/SKILL.md` → 各操作流水线
+通用规范见根目录 `CLAUDE.md`；当前实例的执行约束见 `llm-harness-project/harness/`。
 
 ## 实例路径
 
@@ -12,6 +9,7 @@
 |------|------|
 | `llm-harness-project/raw/` | 原始资料（只读） |
 | `llm-harness-project/wiki/` | 结构化知识库 |
+| `llm-harness-project/harness/` | 当前实例的 Agent 执行约束 |
 | `llm-harness-project/index.md` | 全局索引 |
 | `llm-harness-project/log.md` | 操作日志（append-only） |
 
@@ -40,8 +38,17 @@ llm-harness-project/wiki/         ← 编译后的工程记忆
 ├── incidents/            ← 事故复盘
 ├── changes/              ← 需求、修复、重构记录
 └── synthesis/            ← 对比、策略、判断
+
+llm-harness-project/harness/      ← 当前实例执行约束
+├── prompts/              ← ingest / review / 回写模板
+├── queries/              ← query / locate / runbook 输出边界
+└── checklists/           ← 收尾检查清单
 ```
 
-## 已知技术债
+## 当前稳定边界
 
-当前实例刚从学习型 wiki 清理为工作 Harness。新增内容必须遵守命名规则，不得重新引入与工作项目无关的 LLM 学习页。
+- `index.md` 只登记真实可用的工作知识页，不索引模板、规则或不存在的页面
+- `wiki/` 只保留与当前工作项目有关的页面
+- `harness/` 可以定义规则，但不得承载项目知识
+- 新增项目必须先进入 `index.md` 的自然语言定位区
+- 命名规则由目录职责和类型前缀共同决定，不依赖外部规则文件

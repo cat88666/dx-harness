@@ -22,7 +22,7 @@
 - `git diff --stat`：查看本次内容改动范围
 - `git status`：确认只改了预期的 Markdown 文件
 
-工作流规则定义在 `CLAUDE.md`、`llm-harness-project/CLAUDE.md` 和 `llm-harness-template/harness/`。
+工作流规则定义在 `CLAUDE.md`、`llm-harness-project/CLAUDE.md` 和 `llm-harness-project/harness/`。模板规则只用于创建新实例。
 
 ## 编写风格与命名规范
 统一使用 Markdown 编写，段落短、标题明确、结论需有来源支撑。不要编辑 `raw/` 下的文件。
@@ -36,6 +36,8 @@
 - `Runbook-大厅匹配失败排查.md`
 
 优先更新已有页面，避免创建语义重复的新页。自然语言对象名必须能从 `index.md` 直达，例如“大厅”应定位到 `dx-game-hall`。
+
+规则、提示词、检查清单不要写进 `wiki/`，应放在 `harness/`。
 
 ## 测试指南
 这里的“测试”主要指结构校验。提交 PR 前，请确认：
@@ -51,6 +53,6 @@
 
 PR 应包含：
 - 本次知识变更的简要说明
-- 受影响路径，例如 `llm-harness-project/wiki/summaries/`
+- 受影响路径，例如 `llm-harness-project/wiki/entities/`
 - 已更新 `index.md` 与 `log.md` 的确认信息
 - 仅当 `assets/` 或 Obsidian 展示效果发生变化时再附截图

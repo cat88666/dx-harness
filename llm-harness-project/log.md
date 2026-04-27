@@ -20,3 +20,9 @@
 - 重写 `index.md`，移除与当前工作项目无关的 LLM 学习页索引
 - 更新根 `CLAUDE.md`、`AGENTS.md` 与实例 `CLAUDE.md`，统一为 Work Harness 语义
 - 保留当前唯一有效项目页 `wiki/entities/服务-dx-game-hall.md`
+
+## [2026-04-27] Update | 稳定 Work Harness 架构边界
+- 重写根 `README.md`，明确 Source / Memory / Index / Execution 四层职责
+- 补齐 `llm-harness-project/harness/` 执行层规则
+- 更新 `CLAUDE.md`、`AGENTS.md`、实例 `CLAUDE.md` 与 `index.md`，统一系统层、实例层、知识层和执行层边界
+- 补齐当前实例 `raw/` 与 `wiki/` 的工作型目录骨架

@@ -28,7 +28,6 @@ llm-harness-template/
 ├── index.md            ← 总入口，只做导航，不承载长解释
 ├── log.md              ← append-only 变更记录
 ├── raw/                ← 原始来源层，只读
-├── cleaned/            ← 整理层，放脱敏/归一化后的材料
 ├── wiki/               ← 工程记忆层
 └── harness/            ← Agent 执行层
 ```
@@ -44,10 +43,6 @@ llm-harness-template/
 - `logs/`：日志、异常栈、traceId 资料
 - `sql/`：表结构、脚本、查询样例
 - `incidents/`：事故原始材料
-
-### `cleaned/`
-
-只放整理后的中间材料，例如脱敏日志、归一化调用链、修正格式后的文本。
 
 ### `wiki/`
 
