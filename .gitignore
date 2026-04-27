@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+
+# Editor and IDE metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Python/tooling cache occasionally produced by local scripts
+__pycache__/
+*.py[cod]
+.pytest_cache/
