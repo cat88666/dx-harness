@@ -68,6 +68,8 @@ dx-harness/
 - `queries/`：`query / locate / runbook` 输出边界
 - `checklists/`：修改后必须检查的收尾清单
 
+可复用的 skill 标准库放在 `.claude/skills/`，当前实例的运行约束放在 `llm-harness-project/harness/`。
+
 ## 三、核心原则
 
 1. 真实代码仓是事实源，`wiki/` 是解释层。
