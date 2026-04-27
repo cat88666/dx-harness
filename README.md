@@ -12,7 +12,7 @@
 llm-wiki/
 ├── assets/              ← 静态资源文件
 ├── llm-harness-project/ ← AI 大模型技术体系知识库实例
-├── llm-wiki-template/   ← 标准模板（派生新实例用）
+├── llm-harness-template/← 面向日常开发的 Harness 模板
 └── README.md
 ```
 

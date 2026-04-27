@@ -7,7 +7,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 受约束的 Karpathy LLM Wiki / Obsidian 工程。把 `raw/` 中的分散原始资料**编译**为 `wiki/` 中结构稳定、类型清晰的知识页。这是硬约束——不允许简单导入，必须先判断类型再写入。
 
 活跃实例：`llm-harness-project/`（AI 大模型技术体系）
-模板母版：`llm-wiki-template/`（派生新实例用，不参与日常操作）
 
 ## 技能指令
 

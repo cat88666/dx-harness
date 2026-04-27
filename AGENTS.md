@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## 项目结构与模块组织
-本仓库是一个受约束的 Markdown 知识库工程，不是应用代码仓。当前活跃实例位于 `llm-harness-project/`；可复用模板位于 `llm-wiki-template/`；共享图片资源位于 `assets/`。
+本仓库是一个受约束的 Markdown 知识库工程，不是应用代码仓。当前活跃实例位于 `llm-harness-project/`；工作型 Harness 模板位于 `llm-harness-template/`；共享图片资源位于 `assets/`。
 
 在 `llm-harness-project/` 中，将 `raw/` 视为原始资料层，将 `wiki/` 视为编译后的知识页：
 - `raw/`：只读输入，如论文、产品资料、Prompt 材料
