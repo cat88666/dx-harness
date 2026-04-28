@@ -51,3 +51,8 @@
 ## [2026-04-28] Update | 中文化 ingest-source skill
 - 将 `.claude/skills/ingest-source/SKILL.md` 中刚新增的三段式命令说明改为中文
 - 将 `.claude/skills/ingest-source/references/standards.md` 中命令模式、字段标准和接受/拒绝规则改为中文
+
+## [2026-04-28] Ingest | ingest-map dx-game-texas 粗粒度地图
+- 更新 `wiki/entities/仓库-dx-game-texas.md` 为粗粒度仓库地图，覆盖基础事实、分支族、包职责、协议入口、服务入口、任务入口、RPC/MQ、配置入口、热点文件和后续 deepen 候选
+- 更新 `index.md`，将德州蘑菇游戏当前本地分支修正为 `duik-mushroom-temp-final`，并补充 `PROMPT-INGEST-DEEPEN.md` 系统入口
+- 本次未写 `raw/` 快照；依据当前仓库规则，将 `raw/` 作为只读输入层，来源直接指向 `/Users/mac/IdeaProjects/dx-game-texas` 文件和 git 命令

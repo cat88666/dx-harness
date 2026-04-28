@@ -18,7 +18,7 @@
 
 ### 德州蘑菇游戏
 
-- 当前运行 / 集成分支: `/Users/mac/IdeaProjects/dx-game-texas` → `pre`
+- 当前本地分支: `/Users/mac/IdeaProjects/dx-game-texas` → `duik-mushroom-temp-final`
 - 蘑菇开发分支族: `feture-sun-16603`、`origin/16603-final`、`origin/duik-mushroom-temp-final`
 - 自然语言入口:
   - “德州” / “德州扑克” / “Texas” → [[仓库-dx-game-texas]](wiki/entities/仓库-dx-game-texas.md)
@@ -39,5 +39,6 @@
 - [CLAUDE.md](CLAUDE.md) — 当前实例规则
 - [harness/queries/QUERY_RULES.md](harness/queries/QUERY_RULES.md) — 查询、定位、排障输出边界
 - [harness/prompts/PROMPT-INGEST-REPO.md](harness/prompts/PROMPT-INGEST-REPO.md) — 仓库摄入模板
+- [harness/prompts/PROMPT-INGEST-DEEPEN.md](harness/prompts/PROMPT-INGEST-DEEPEN.md) — 细粒度扩展模板
 - [harness/checklists/CHECKLIST-知识回写.md](harness/checklists/CHECKLIST-知识回写.md) — 知识回写检查清单
 - [log.md](log.md) — append-only 变更记录
