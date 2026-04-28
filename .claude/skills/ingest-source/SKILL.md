@@ -1,50 +1,85 @@
 ---
 name: ingest-source
-description: Ingest project materials, product materials, and codebases into the Work Harness by classifying the source, extracting stable objects, and writing indexed wiki pages plus log entries.
+description: 摄入或扩展 Work Harness 工程记忆，包含三条命令：/ingest-map 用于粗粒度项目地图和索引，/ingest-deepen 用于基于已有粗粒度页面继续细化，/harness-locate 用于低 token 对象定位。
 ---
 
-# Ingest Source
+# 摄入来源
 
-Use this skill when the user wants to ingest one or more sources into the Work Harness, especially:
+当用户要求在 Work Harness 中摄入、索引、细化、定位或路由项目 / 代码库知识时，使用本 skill。
 
-- project materials: plans, tickets, meeting notes, milestones, scope docs
-- product materials: PRDs, feature briefs, UX flows, product decisions
-- codebases: repository trees, README, `pom.xml`, configs, source code, run paths
+## 命令
 
-## Standard
+### `/ingest-map <source>`
 
-Read [standards.md](references/standards.md) first. It defines the source classes, target page types, and required fields.
+创建项目粗粒度地图。适用于新仓库 / 新项目，或 `index.md` 无法正确路由自然语言对象名的场景。
 
-## Workflow
+输出：
+- 必要时代码库先生成 raw 快照
+- 一个仓库 / 服务 / 项目实体页
+- `index.md` 中的别名和路由入口
+- `log.md` 记录
 
-1. Classify the source as `project`, `product`, or `codebase`.
-2. Identify the stable object names that should be indexed.
-3. Extract only durable facts. Drop transient chatter.
-4. Write or update the minimal set of wiki pages.
-5. Update `index.md` so the object is directly locatable.
-6. Append `log.md` with the ingest result.
+保持浅层：只记录身份、路径、分支、模块树、入口、依赖边、热点区域和命名别名。不要深读业务链路。
 
-## Guardrails
+### `/ingest-deepen <object-or-page>`
 
-1. If the user instruction, scope, file count, or boundary conflicts with earlier instructions or the skill standard, stop and ask for confirmation before proceeding.
-2. Decide the source class before producing any artifacts.
-3. For `codebase`, produce raw snapshots first; do not write `wiki/` in the same first pass.
-4. Raw snapshots must record facts only; do not write wiki-level judgments into `raw/`.
-5. For `codebase`, create dedicated structure, heatmap, and dependency snapshots when those facts are available.
-6. Keep stage boundaries explicit in `log.md`: `raw` ingest and `wiki` ingest are separate events.
+基于已有粗粒度页面继续扩展细节。只能在 `/ingest-map` 已建立路由之后使用。
 
-## Rules
+输出：
+- 必要的模块 / 任务 / 主题 / runbook 页面
+- 更新后的来源页面链接
+- `index.md` 中新增的自然语言路由
+- `log.md` 记录
 
-- Treat `raw/` as read-only.
-- Prefer updating existing pages over creating new ones.
-- Every new page must use a type prefix.
-- Every conclusion must point back to source evidence.
-- Do not write rules or prompts into `wiki/`.
+范围必须窄：一次只处理一个模块、一条链路、一个任务、一个事故或一个问题簇。优先复用已有页面。
 
-## Output by class
+### `/harness-locate <object-or-question>`
 
-- `project`: capture scope, owners, milestones, risks, and current state.
-- `product`: capture problem statement, audience, constraints, and decision points.
-- `codebase`: capture repository identity, structure, entry points, dependencies, and high-value runbooks.
+低 token 路由模式。当用户给出“德州”“蘑菇”“逃庄”“大厅”等领域词，或给出协议、类、服务、分支、任务名时，在大范围搜索前先使用该命令。
 
-If the source is mixed, choose the dominant class and split the rest into secondary pages only when it adds stable value.
+只输出：
+- 命中的索引入口，或索引缺失结论
+- 目标 wiki 页面
+- 已知的真实仓库路径和分支
+- 最关键的源码入口
+- 下一步是否需要 `/ingest-map` 或 `/ingest-deepen`
+
+定位模式下不要做大范围代码分析，除非索引缺失或明显过期。
+
+## 标准
+
+只有在写入或更新产物时才读取 [standards.md](references/standards.md)。执行 `/harness-locate` 时，先读 `llm-harness-project/index.md`；只有需要写入时才加载详细标准。
+
+## 工作流
+
+1. 选择命令模式：地图、细化或定位。
+2. 定位模式从 `index.md` 开始，路由清楚后即停止。
+3. 地图模式先产出最小可用导航面，再考虑任何深层主题页。
+4. 细化模式先读已有粗粒度页面，只扩展用户指定对象。
+5. 每新增一个自然语言路由，都更新 `index.md`。
+6. 向 `log.md` 追加命令模式和结果。
+
+## 护栏
+
+1. 如果请求包含“定位 / 在哪 / 哪个仓 / 哪条链路”，默认使用 `/harness-locate`。
+2. 如果索引无法路由对象，先对所属仓库 / 项目执行 `/ingest-map`，再做深层分析。
+3. 如果对象已经有粗粒度页面，使用 `/ingest-deepen`，不要创建平行重复页面。
+4. 代码库地图模式可先写 raw 快照；只有证据已经足够且页面保持浅层时，才可同一轮写 wiki 页。
+5. raw 快照只记录事实，不把 wiki 层判断写入 `raw/`。
+6. 在 `log.md` 中明确阶段边界：map、deepen、locate/update 是不同事件。
+
+## 规则
+
+- 将 `raw/` 视为只读。
+- 优先更新已有页面，避免新建重复页面。
+- 每个新页面必须使用类型前缀。
+- 每个结论都必须回指来源证据。
+- 不要把规则或提示词写入 `wiki/`。
+
+## 按来源类型输出
+
+- `project`：记录范围、负责人、里程碑、风险和当前状态。
+- `product`：记录问题陈述、目标用户、约束和决策点。
+- `codebase`：记录仓库身份、结构、入口、依赖和高价值 runbook。
+
+如果来源混合，选择主类型；只有能增加稳定价值时，才把其他内容拆成次级页面。

@@ -116,11 +116,13 @@ dx-harness/
 4. 新页必须带类型前缀：`仓库-`、`模块-`、`服务-`、`任务-`、`主题-`、`Runbook-`、`Incident-`、`变更-`、`对比-`。
 5. 任何 `wiki/` 实质修改后，必须同步更新 `index.md` 并追加 `log.md`。
 6. 结论必须回指源码、配置、日志、SQL、工单或事故材料。
+7. 新项目先 `/ingest-map` 建粗粒度地图；已有地图再 `/ingest-deepen` 扩细节；定位类问题先 `/harness-locate`，不要直接全仓扩散。
 
 ## 四、当前状态
 
 当前实例已登记：
 
 - 大厅 / 比赛大厅 / 游戏大厅 → `dx-game-hall` → `/Users/mac/IdeaProjects/dx-game-hall`
+- 德州 / 德州扑克 / Texas → `dx-game-texas` → `/Users/mac/IdeaProjects/dx-game-texas`
 
-当前还未进入大规模内容建设阶段。下一步应先完善 `dx-game-hall` 的仓库页、核心模块页和 runbook，而不是继续扩散目录或规则。
+当前还未进入大规模内容建设阶段。下一步应先用 `/ingest-map` 补齐核心仓库粗粒度地图，再按实际需求用 `/ingest-deepen` 扩展链路、任务和 runbook。

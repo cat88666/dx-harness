@@ -37,3 +37,17 @@
 - 新增 `wiki/changes/任务-德州蘑菇逃庄需求补充.md`，登记蘑菇游戏第三轮提测中的逃庄 BUG 补充需求
 - 新增 `wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md`，沉淀 `USER_HOLD_SEAT` 到结算后蘑菇庄位拦截链路
 - 更新 `index.md`，增加德州、蘑菇游戏、逃庄、留座离桌和第三轮提测的自然语言入口
+
+## [2026-04-28] Update | 固化三段式 harness skill 命令
+- 更新 `.claude/skills/ingest-source/SKILL.md`，定义 `/ingest-map`、`/ingest-deepen`、`/harness-locate`
+- 更新 `.claude/skills/ingest-source/references/standards.md`，补充三种命令模式、粗粒度地图字段和细粒度扩展字段
+- 新增 `llm-harness-project/harness/prompts/PROMPT-INGEST-DEEPEN.md`
+- 更新根 `CLAUDE.md`、实例 `CLAUDE.md`、`README.md`、`PROMPT-INGEST-REPO.md` 和 `QUERY_RULES.md`，统一三段式摄入与定位流程
+
+## [2026-04-28] Update | 增加始终中文全局规则
+- 更新根 `CLAUDE.md`，增加语言规则和铁律：除非用户明确要求其他语言，所有输出和回写都使用中文
+- 更新 `llm-harness-project/CLAUDE.md`，同步当前实例语言规则
+
+## [2026-04-28] Update | 中文化 ingest-source skill
+- 将 `.claude/skills/ingest-source/SKILL.md` 中刚新增的三段式命令说明改为中文
+- 将 `.claude/skills/ingest-source/references/standards.md` 中命令模式、字段标准和接受/拒绝规则改为中文
