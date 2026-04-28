@@ -62,3 +62,13 @@
 - 更新 `wiki/changes/任务-德州蘑菇逃庄需求补充.md`，将当前上下文修正为 `duik-mushroom-temp-final`，补充已接入出口、验收要点和持续关注项
 - 更新 `index.md`，补充 `MushroomNextButtonService`、`nextButtonUserId`、蘑菇防逃庄回归测试点的自然语言入口
 - 本次未写 `raw/` 快照；来源直接指向 `/Users/mac/IdeaProjects/dx-game-texas` 当前源码、`docs/蘑菇防逃庄功能回归测试点.md` 与 `docs/handleNextButton需求分析.md`
+
+## [2026-04-28] Query | harness-locate 蘑菇逃庄留座离桌
+- 从 `index.md` 自然语言入口定位到 `wiki/entities/仓库-dx-game-texas.md`、`wiki/changes/任务-德州蘑菇逃庄需求补充.md`、`wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md`
+- 复核真实仓库 `/Users/mac/IdeaProjects/dx-game-texas` 当前分支为 `duik-mushroom-temp-final`，工作区仅有未跟踪 `.DS_Store` 与 `src/.DS_Store`
+- 源码命中 `MushroomNextButtonService`、`UserHoldSeatHandler`、`UserLeaveTask`、`HandOverListener`、`GameStartHandlerBase` 等开发定位入口
+
+## [2026-04-28] Query | harness-locate 普通预站起 蘑菇逃庄
+- 从主题页中的普通预站起风险点定位到 `PrepStandCommand`、`SpecifyService`、`MushroomNextButtonService` 与 `UserStandHander`
+- 确认普通预站起设置阶段不直接调用 `MushroomNextButtonService`；手牌进行中由结算后 `SpecifyService.collectPreStandUsers` 收集并在 `handleForcedUserAction` 拦截，非手牌进行中则同步触发 `handleForcedUserAction`
+- 回写 `wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md` 与 `wiki/changes/任务-德州蘑菇逃庄需求补充.md`，将“需确认”改为已确认链路

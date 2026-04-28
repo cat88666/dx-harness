@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="skill">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/log.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/changes/任务-德州蘑菇逃庄需求补充.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/wiki/changes/任务-德州蘑菇逃庄需求补充.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777345263138</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="skill">
+      <option name="closed" value="true" />
+      <created>1777346442206</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1777346442206</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
