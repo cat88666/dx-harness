@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" afterDir="false" />
+    <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="claude要求提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/llm-harness-project/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/log.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/llm-harness-project/raw/repos/dx-game-hall/2026-04-27-external-deps.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/raw/repos/dx-game-hall/2026-04-27-external-deps.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,11 +322,28 @@
       <option name="project" value="LOCAL" />
       <updated>1777277703805</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="claude要求提交">
+      <option name="closed" value="true" />
+      <created>1777280757505</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1777280757505</updated>
+    </task>
+    <task id="LOCAL-00032" summary="claude要求提交">
+      <option name="closed" value="true" />
+      <created>1777280768811</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1777280768811</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="claude要求提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="claude要求提交" />
   </component>
 </project>

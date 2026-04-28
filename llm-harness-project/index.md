@@ -6,7 +6,24 @@
 
 ### 大厅 / 比赛大厅 / 游戏大厅
 
-- [[服务-dx-game-hall]](wiki/entities/服务-dx-game-hall.md) — 比赛大厅后端服务，真实仓库 `/Users/mac/IdeaProjects/dx-game-hall`，负责大厅登录、房间/牌桌列表、比赛、报名、用户状态、钱包、广播通知与排队入口
+- [[仓库-dx-game-hall]](wiki/entities/仓库-dx-game-hall.md) — 比赛大厅后端仓库卡，真实仓库 `/Users/mac/IdeaProjects/dx-game-hall`
+
+### 德州 / 德州扑克 / Texas
+
+- [[仓库-dx-game-texas]](wiki/entities/仓库-dx-game-texas.md) — 德州游戏后端仓库卡，真实仓库 `/Users/mac/IdeaProjects/dx-game-texas`
+- [[任务-德州蘑菇逃庄需求补充]](wiki/changes/任务-德州蘑菇逃庄需求补充.md) — 当前蘑菇游戏开发 / 提测第三轮中的逃庄 BUG 补充需求
+- [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md) — 从 `USER_HOLD_SEAT` 到结算后蘑菇庄位拦截的定位链路
+
+## Active Work
+
+### 德州蘑菇游戏
+
+- 当前运行 / 集成分支: `/Users/mac/IdeaProjects/dx-game-texas` → `pre`
+- 蘑菇开发分支族: `feture-sun-16603`、`origin/16603-final`、`origin/duik-mushroom-temp-final`
+- 自然语言入口:
+  - “德州” / “德州扑克” / “Texas” → [[仓库-dx-game-texas]](wiki/entities/仓库-dx-game-texas.md)
+  - “蘑菇游戏” / “堆蘑菇” / “蘑菇逃庄” / “逃庄 BUG” / “第三轮提测” → [[任务-德州蘑菇逃庄需求补充]](wiki/changes/任务-德州蘑菇逃庄需求补充.md)
+  - “留座离桌” / “结算留座离桌” / “下一手庄位不能离开” → [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md)
 
 ## Content Roots
 
