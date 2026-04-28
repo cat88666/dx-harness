@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="claude要求提交">
-      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/SKILL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/skills/ingest-source/references/standards.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/CLAUDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/harness/prompts/PROMPT-INGEST-REPO.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/harness/prompts/PROMPT-INGEST-REPO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/harness/queries/QUERY_RULES.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/harness/queries/QUERY_RULES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/llm-harness-project/log.md" beforeDir="false" afterPath="$PROJECT_DIR$/llm-harness-project/log.md" afterDir="false" />
+    <list default="true" id="7d968005-f85d-40ff-b363-dcb399235b4c" name="Changes" comment="skill">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,12 +343,29 @@
       <option name="project" value="LOCAL" />
       <updated>1777344620148</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="skill">
+      <option name="closed" value="true" />
+      <created>1777345120952</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1777345120952</updated>
+    </task>
+    <task id="LOCAL-00035" summary="skill">
+      <option name="closed" value="true" />
+      <created>1777345263138</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1777345263138</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="claude要求提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="claude要求提交" />
+    <MESSAGE value="skill" />
+    <option name="LAST_COMMIT_MESSAGE" value="skill" />
   </component>
 </project>

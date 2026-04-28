@@ -56,3 +56,9 @@
 - 更新 `wiki/entities/仓库-dx-game-texas.md` 为粗粒度仓库地图，覆盖基础事实、分支族、包职责、协议入口、服务入口、任务入口、RPC/MQ、配置入口、热点文件和后续 deepen 候选
 - 更新 `index.md`，将德州蘑菇游戏当前本地分支修正为 `duik-mushroom-temp-final`，并补充 `PROMPT-INGEST-DEEPEN.md` 系统入口
 - 本次未写 `raw/` 快照；依据当前仓库规则，将 `raw/` 作为只读输入层，来源直接指向 `/Users/mac/IdeaProjects/dx-game-texas` 文件和 git 命令
+
+## [2026-04-28] Ingest | ingest-deepen 德州蘑菇逃庄留座离桌链路
+- 更新 `wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md`，从旧的候选拦截点说明深化为当前分支 `MushroomNextButtonService` 实现地图
+- 更新 `wiki/changes/任务-德州蘑菇逃庄需求补充.md`，将当前上下文修正为 `duik-mushroom-temp-final`，补充已接入出口、验收要点和持续关注项
+- 更新 `index.md`，补充 `MushroomNextButtonService`、`nextButtonUserId`、蘑菇防逃庄回归测试点的自然语言入口
+- 本次未写 `raw/` 快照；来源直接指向 `/Users/mac/IdeaProjects/dx-game-texas` 当前源码、`docs/蘑菇防逃庄功能回归测试点.md` 与 `docs/handleNextButton需求分析.md`

@@ -12,7 +12,7 @@
 
 - [[仓库-dx-game-texas]](wiki/entities/仓库-dx-game-texas.md) — 德州游戏后端仓库卡，真实仓库 `/Users/mac/IdeaProjects/dx-game-texas`
 - [[任务-德州蘑菇逃庄需求补充]](wiki/changes/任务-德州蘑菇逃庄需求补充.md) — 当前蘑菇游戏开发 / 提测第三轮中的逃庄 BUG 补充需求
-- [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md) — 从 `USER_HOLD_SEAT` 到结算后蘑菇庄位拦截的定位链路
+- [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md) — 当前分支 `MushroomNextButtonService`、保护窗口和离桌出口定位链路
 
 ## Active Work
 
@@ -24,6 +24,7 @@
   - “德州” / “德州扑克” / “Texas” → [[仓库-dx-game-texas]](wiki/entities/仓库-dx-game-texas.md)
   - “蘑菇游戏” / “堆蘑菇” / “蘑菇逃庄” / “逃庄 BUG” / “第三轮提测” → [[任务-德州蘑菇逃庄需求补充]](wiki/changes/任务-德州蘑菇逃庄需求补充.md)
   - “留座离桌” / “结算留座离桌” / “下一手庄位不能离开” → [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md)
+  - “MushroomNextButtonService” / “nextButtonUserId” / “蘑菇防逃庄回归测试点” → [[主题-德州蘑菇逃庄留座离桌链路]](wiki/summaries/主题-德州蘑菇逃庄留座离桌链路.md)
 
 ## Content Roots
 
